@@ -1,0 +1,143 @@
+/*
+
+- Html element styles
+- 'More' tooltip
+- Data table styles
+
+*/
+
+/* html element styles ***************************************************************** */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	padding:15px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6, {
+	font-family: georgia, arial;
+	margin:0 0 15px 0;
+}
+
+h1 {
+	font-weight:normal;
+	text-align: center;
+}
+
+p {
+	margin:0 0 15px 0;
+}
+
+table {
+	margin:0 0 15px 0;
+}
+
+ul,ol {
+	margin:0 0 15px 1em;
+}
+
+ul li,
+ol li {
+	margin-bottom:5px;
+	text-align: left;
+}
+
+/* more tooltip ************************************************************ */
+
+.div1 {
+	width:auto;
+	float:left;
+	margin-right:15px;
+}
+
+.div2 {
+	width:300px;
+	float:left;
+	border-left:1px solid #ccc;
+	padding-left:15px;
+}
+
+/* Data table styles ********************************************************** */
+
+#table1 td {
+	padding:10px 5px 10px 5px;
+	vertical-align: middle !important;
+	text-align: center;
+}
+
+.uid,
+.college,
+.location {
+	font-size:.75em;
+}
+
+.uid {
+	text-align:center;
+	vertical-align:middle;
+	font-size:.9em;
+	font-weight:bold;
+}
+
+.name {
+	position:relative;
+}
+
+.college {
+	
+}
+
+.location {
+	
+}
+
+.sap {
+	
+}
+
+.promote, .marketing, .sap {
+	font-size:.8em;
+	text-align:center;
+}
+
+.url {
+	font-size:.75em;
+	padding:0;
+	margin:0;
+}
+
+.url a:hover {
+	text-decoration:none;
+}
+
+.description {
+	display:none;
+}
+
+.warning {
+	color:red;
+}
+
+h3 {
+	font-size:1em;
+	color:black;
+}
+
+.highlight {
+	background-color: Yellow;
+}
+
+.bottom_zero {
+	margin-bottom:0!important;
+	padding-bottom:zero!important;
+}
+#logout{
+	position: absolute;
+top: 10px;
+right: 10px;
+text-decoration: none;
+color: #333;
+}

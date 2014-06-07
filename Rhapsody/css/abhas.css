@@ -1,0 +1,527 @@
+body{
+	/*display: none;*/
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	height:100%;
+	margin: 0;
+}
+
+#container{
+	background-image: url(img/bg.jpg);
+	background-size: 100% 100%;
+	overflow: hidden;
+	width: 100%;
+	height: 400%;
+	position: absolute;
+	top: -100%;
+}
+
+#home{
+	position: absolute;
+	left: 0;
+	top: 25%;
+	height: 25%;
+	width: 100%;
+}
+
+#sponsors{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 25%;
+	width: 100%;
+	background-image: url(./img/banner.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#organizers{
+	position: absolute;
+	left: 0;
+	top: 75%;
+	height: 25%;
+	width: 100%;
+}
+
+#page-right, #page-left{
+	position: absolute;
+	left: 100%;
+	top: 25%;
+	width: 100%;
+	height: 25%;
+}
+
+#page-left{
+	left: -100%;
+	background: #34495e;
+	background-image: url(img/gallery.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#page-right{
+	background-image: url(img/fare.jpg);
+	background-size: 100% 100%;
+}
+
+.leftArrow, .rightArrow{
+	position: absolute;
+	top: 44%;
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+	cursor: pointer;
+	background-image: url(./img/home1.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 8%;
+	height: 17%;
+}
+
+.leftArrow{
+	left: 20px;
+	top: 3%;
+}
+
+.rightArrow{
+	right: 20px;
+}
+#iitr{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20%;
+}
+#registration{
+	position: absolute;
+	top: 2%;
+	right: 6%;
+	font-family: 'Audiowide', cursive;
+}
+#registration>a{
+	color: #eee;
+	text-decoration: none;
+}
+#sound{
+	position: absolute;
+	top: 2%;
+	right: 2%;
+	width: 2%;
+	height: 3%;
+	background-image: url(./img/mute.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.muted{
+	background-image: url(./img/sound.png) !important;
+	width: 1% !important;
+}
+.logo{
+	position: absolute;
+	top: 2%;
+	left: 2%;
+	width: 20%;
+	height: 10%;
+	background-image: url(./img/logo.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#navBar>div>div{
+	cursor: pointer;
+}
+
+#social{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+
+.contact, .team, .partners, .events, .gallery{
+	position:absolute;
+	width: 14%;
+	height: 20%;
+}
+
+.contact{
+	top:10%;
+	left:25%;
+}
+
+.team{
+	top:10%;
+	left:55%;
+}
+
+.partners{
+	top:20%;
+	left:70%;
+}
+
+.events{
+	top:10%;
+	left:7%;
+}
+
+.gallery{
+	top:15%;
+	left:85%;
+}
+
+#gingerfeet{
+	position: absolute;
+	bottom: 0%;
+	left: 25%;
+	width: 13%;
+	height: 40%;
+	background-image: url(img/gingerfeet.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	-webkit-animation:movePointer 2s infinite;
+	animation:movePointer 2s infinite;
+	animation-timing-function: ease-out;
+}
+#reachus{
+	position: absolute;
+	bottom: 25%;
+	right: 4%;
+	width: 10%;
+	height: 22%;
+	background-image: url(img/reach.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+@keyframes movePointer{
+	0% {bottom:0%;}
+	50% {bottom:10%;}
+	100% {bottom:0%;}
+}
+
+@-webkit-keyframes movePointer{
+	0% {bottom:0%;}
+	50% {bottom:10%;}
+	100% {bottom:0%;}
+}
+
+.gruCar{
+	position: absolute;
+	bottom: 2%;
+	left: 30%;
+	width: 55%;
+	height: 60%;
+}
+
+#gruCar{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url(img/car.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#contact, #team, #partners, #gallery, #events{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	background-size:80%;
+	background-repeat:no-repeat;
+}
+
+#contact{
+	background-image: url(img/about.png);
+}
+#events{
+	background-image: url(img/events.png);
+}
+
+#partners{
+	background-image: url(img/partners.png);
+}
+
+#team{
+	background-image: url(img/team.png);
+}
+
+#gallery{
+	background-image: url(img/gallery.png);
+}
+
+.oneEvent{
+	position: absolute;
+	width: 8%;
+	height: 30%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.workshop{
+	width: 10%;
+	top: 0;
+	left: 20%;
+	background-image: url(img/events/workshop.png);
+}
+
+.symphony{
+	width: 10%;
+	top: 32%;
+	left: 35%;
+	background-image: url(img/events/symphony.png);
+}
+
+.glitz{
+	width: 10%;
+	top: 32%;
+	left: 43.5%;
+	background-image: url(img/events/glitz.png);
+}
+
+.extasia{
+	width: 22%;
+	top: 72%;
+	left: 1%;
+	background-image: url(img/events/extasia.png);
+}
+
+.sargam{
+	width: 13%;
+	top: 70%;
+	left: 48%;
+	background-image: url(img/events/sargam.png);
+}
+
+.curtainCall{
+	width: 15%;
+	top: 36%;
+	left: 51%;
+	background-image: url(img/events/curtainCall.png);
+}
+
+.verbosity{
+	width: 13%;
+	top: 73%;
+	left: 67%;
+	background-image: url(img/events/verbosity.png);
+}
+
+.prayaas{
+	width: 15%;
+	top: 20%;
+	left: 66%;
+	background-image: url(img/events/prayaas.png);
+}
+
+.thahake{
+	width: 11%;
+	top: 72%;
+	left: 22%;
+	background-image: url(img/events/thahake.png);
+}
+
+.alantus{
+	width: 11%;
+	top: 72%;
+	left: 89%;
+	background-image: url(img/events/atlantus.png);
+}
+
+.fundulgence{
+	width: 19%;
+	top: 73%;
+	left: 32%;
+	background-image: url(img/events/fundulgence.png);	
+}
+
+.snapshots{
+	width: 13%;
+	top: 72%;
+	left: 77%;
+	background-image: url(img/events/snapshots.png);	
+}
+
+.beats{
+	width: 12.5%;
+	top: 74%;
+	left: 56.5%;
+	background-image: url(img/events/beats.png);
+}
+
+#grass{
+	position: absolute;
+	bottom: 0;
+	height: 9%;
+	width: 100%;
+}
+
+.coordinatorDetails>div{
+	display: inline-block;
+	width: 32%;
+}
+.coordinatorDetails.twoDiv>div{
+	width: 49%;
+}
+.coordinatorDetails.fourDiv>div{
+	width: 24%;
+}
+.coordinatorDetails {
+	font-size: 16px;
+	font-family: 'ABeeZee', sans-serif;
+}
+.leftDiv{
+	text-align: left;
+}
+.rightDiv{
+	text-align: right;
+}
+.centreDiv{
+	text-align: center;
+}
+.coordinator{
+	color: #DA560C;
+}
+.cocontact{
+	color: #eee;
+}
+#wowslider-container1{
+	position: absolute;
+	top: 20%;
+}
+
+#leftMember, #centerMember, #rightMember{
+	position: absolute;
+	height: 70%;
+	width: 15%;
+}
+
+#leftMember{
+	top: 10%;
+	left: -1%;
+}
+
+#rightMember{
+	top: 10%;
+	right: -1%;
+}
+
+#centerMember{
+	bottom: 2%;
+	margin: auto;
+	height: 22%;
+	width: 100%;
+}
+
+#centerMember>.member{
+	display: inline-block;
+	height: 100%;
+	width: 8%;
+}
+
+.member{
+	cursor: pointer;
+	margin: 0 10px;
+	height: 30%;
+}
+.member>img{
+	height: 100%;
+	width: 100%;
+}
+#nishant{
+	width: 12% !important;
+}
+#chitresh{
+	width: 10% !important;
+}
+#rahul{
+	width: 12% !important;
+}
+/*#kartik{
+	width: 7% !important;
+}*/
+.spon{
+	display: inline-block;
+	width: 18%;
+}
+.spon>img{
+	width: 100%;
+	height: 100%;
+}
+#spon{
+	position: absolute;
+	top: 14%;
+	left: 30%;
+	width: 64%;
+	height: 68%;
+	overflow: auto;
+}
+.rules{
+	font-family: 'Audiowide', cursive;
+	position: absolute;
+	right: 10px;
+	top: 50px;
+	font-size: 17px;
+	color: #2489ce;
+	text-decoration: underline;
+}
+.rule{
+	font-family: 'Audiowide', cursive;
+	font-size: 17px;
+	color: #2489ce;
+	text-decoration: underline;
+}
+.coordi{
+	font-family: 'ABeeZee', cursive;
+	width: 100% !important;
+	text-align: center;
+}
+#sponHome{
+	position: absolute;
+	bottom: 2%;
+	left: 2%;
+	width: 10%;
+	height: 17%;
+	background-image: url(./img/home.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+#teamHome{
+	position: absolute;
+	top: 2%;
+	width: 8%;
+	height: 17%;
+	margin: 0 45%;
+	background-image: url(./img/home2.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+#webTeam{
+	font-family: 'Audiowide', cursive;
+	position: absolute;
+	top: 4%;
+	right: 15%;
+	font-size: 20px;
+	color: #eee;
+}
+#websiteTeam{
+	background: #251010;
+	text-align: center;
+}
+#websiteTeam h4{
+	text-align: center;
+}
+.webMember{
+	display: inline-block;
+	width: 30%;
+	min-width: 100px;
+	height: 50%;
+	min-height: 150px;
+	font-family: 'ABeeZee', cursive;
+	color: #eee;
+	text-transform: none;
+}
+.webMember>img{
+	width: 100%;
+}

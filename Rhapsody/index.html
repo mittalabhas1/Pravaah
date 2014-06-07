@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<!--All the rights of the characters used in the website rests with creator of those characters. They have just been used here for non-profit purpose-->
+<head>
+	<title>Rhapsody 2014</title>
+	<link rel="stylesheet" type="text/css" href="css/abhas.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.custombox.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="css/custombox.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=ABeeZee:400,400italic|Eater|Armata|Audiowide'>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+	<script type="text/javascript" src="js/jquery-min-2.0.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/spritely.js"></script>
+	<script type="text/javascript" src="js/abhas.js"></script>
+	<script type="text/javascript">
+		/*$(window).load(function() { 
+			$('#status').fadeOut();
+			$('#preloader').delay(350).fadeOut('slow');
+			$('body').delay(350).fadeIn();
+		})*/
+	</script>
+	<style type="text/css">
+		/* Preloader Begins */
+	/*#preloader{
+		position: fixed;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		width: 100%;
+		height: 100%;
+		background-color:#333;
+		z-index:9999;
+	}
+
+	#status{
+		width:100%;
+		height:100%;
+		position:absolute;
+		left:0;
+		top:0;
+		background-image:url(img/loading.gif);
+		background-size: 100% 100%;
+		background-repeat:no-repeat;
+		background-position:center;
+	}*/
+		/* Preloader Ends */
+	</style>
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=511859215568936";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<!-- Piwik -->
+	<script type="text/javascript">
+	  var _paq = _paq || [];
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  (function() {
+	    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://rhapsody.pravaah.org/analytics/";
+	    _paq.push(['setTrackerUrl', u+'piwik.php']);
+	    _paq.push(['setSiteId', 1]);
+	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+	    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	  })();
+
+	</script>
+	<noscript><p><img src="http://rhapsody.pravaah.org/analytics/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+	<!-- End Piwik Code -->
+</head>
+<!--Preloader starts here-->
+	<!-- <div id="preloader">
+		<div id="status"></div>
+	</div> -->
+	<!--Preloader ends here-->
+<body>
+	<!--Music Tag begins here-->
+	<audio autoplay loop>
+		<!-- <source src="assets/music/GoGoRhapsody.m4a" type="audio/mpeg"> -->
+		<source src="assets/music/song.mp3" type="audio/mpeg">
+	</audio>
+	<!--Music Tag ends here-->
+	<div id="container">
+
+		<!--Sponsors page starts here-->
+		<div id="sponsors">
+			<div class="logo"></div>
+			<div id="spon" class="scroll">
+				<a href="http://www.elofhansson.com/" target="_blank"><div class="spon"><img src="css/img/spon/1.png" title="Elof Hansson"></div></a>
+				<a href="http://www.acclimited.com" target="_blank"><div class="spon"><img src="css/img/spon/16.png" title="ACC Cements"></div></a>
+				<a href="http://sjvn.nic.in/" target="_blank"><div class="spon"><img src="css/img/spon/14.png" title="SJVN"></div></a>
+				<a href="http://www.hindustanpetroleum.com/" target="_blank"><div class="spon"><img src="css/img/spon/15.png" title="Hindustan Petroleum"></div></a>
+				<a href="http://hppcl.gov.in/" target="_blank"><div class="spon"><img src="css/img/spon/8.png" title="Himachal Pradesh Power Corporation Limited"></div></a>
+				<a href="http://www.spykar.com/" target="_blank"><div class="spon"><img src="css/img/spon/5.png" title="Spykar"></div></a>
+				<a href="http://vanheusenindia.com/" target="_blank"><div class="spon"><img src="css/img/spon/13.png" title="Van Heusen"></div></a>
+				<a href="http://mtsdiscover.com/" target="_blank"><div class="spon"><img src="css/img/spon/23.png" title="MTS"></div></a>
+				<a href="http://nh7.in/" target="_blank"><div class="spon"><img src="css/img/spon/24.png" title="NH7"></div></a>
+				<a href="http://www.youthincmag.com/" target="_blank"><div class="spon"><img src="css/img/spon/25.png" title="Youth Incorporated"></div></a>
+				<a href="http://www.enquotism.com/" target="_blank"><div class="spon"><img src="css/img/spon/27.png" title="Enquotism"></div></a>
+				<a href="http://www.bhargavasmusic.com/" target="_blank"><div class="spon"><img src="css/img/spon/28.png" title="Bhargava's Music"></div></a>
+				<a href="http://www.studiooctave.com/" target="_blank"><div class="spon"><img src="css/img/spon/29.png" title="Studio Octave"></div></a>
+				<a href="http://www.eventionsproductions.com/" target="_blank"><div class="spon"><img src="css/img/spon/26.png" title="Eventions"></div></a>
+				<a href="http://www.giftxoxo.com/" target="_blank"><div class="spon"><img src="css/img/spon/6.png" title="Gift XOXO"></div></a>
+				<a href="http://robogenesis.in/" target="_blank"><div class="spon"><img src="css/img/spon/7.png" title="Robogenesis"></div></a>
+				<a href="http://robotechlabs.com/" target="_blank"><div class="spon"><img src="css/img/spon/9.png" title="Robotech Labs"></div></a>
+				<a href="http://authentictechs.com/" target="_blank"><div class="spon"><img src="css/img/spon/10.png" title="Authentic Techs"></div></a>
+				<a href="http://www.reverttech.com/" target="_blank"><div class="spon"><img src="css/img/spon/11.png" title="Revert Technologies"></div></a>
+				<a href="http://chawlamart.weebly.com/" target="_blank"><div class="spon"><img src="css/img/spon/19.png" title="Chawla Mart"></div></a>
+				<a href="http://www.kapsystem.com/bulksms/" target="_blank"><div class="spon"><img src="css/img/spon/3.png" title="KAPS"></div></a>
+				<a href="http://www.blazeflash.com/" target="_blank"><div class="spon"><img src="css/img/spon/18.png" title="BlazeFlash Couriers Limited"></div></a>
+				<a href="http://www.madmills.com/" target="_blank"><div class="spon"><img src="css/img/spon/22.png" title="Madmills"></div></a>
+				<a href="http://www.twenty19.com/" target="_blank"><div class="spon"><img src="css/img/spon/12.png" title="Twenty19.com"></div></a>
+				<a href="http://www.knowafest.com/" target="_blank"><div class="spon"><img src="css/img/spon/4.png" title="knowafest.com"></div></a>
+				<a href="http://www.indiacollegefest.com" target="_blank"><div class="spon"><img src="css/img/spon/2.png" title="indiacollegefest.com"></div></a>
+				<a href="http://www.festpav.com/" target="_blank"><div class="spon"><img src="css/img/spon/17.png" title="festPav.com"></div></a>
+				<a href="http://www.thetestament.in/" target="_blank"><div class="spon"><img src="css/img/spon/20.png" title="Testament"></div></a>
+				<a href="http://www.kcbrandingsolutions.in/" target="_blank"><div class="spon"><img src="css/img/spon/21.png" title="KC Branding Solutions"></div></a>
+			</div>
+			<div id="sponHome"></div>
+		</div>
+		<!--Sponsors page ends here-->
+
+		<!--Team page starts here-->
+		<div id="organizers">
+			
+			<!--Web Team-->
+			<a href="#websiteTeam" class="list-group-item sign"><div id="webTeam">WEB-TEAM</div></a>
+				<div id="websiteTeam" style="display: none;" class="fancy-content">
+				    <div class="fancy-header">
+				        <button type="button" class="close" onclick="$.fn.custombox('close');">&times;</button>
+				        <h4>WEB-TEAM</h4>
+				    </div>
+				    <div class="fancy-body">
+				        <p>
+				        	<a href="https://www.facebook.com/abhas.mittal7" target="_blank"><div class="webMember"><img src="./css/img/team/am.jpg"><br />Abhas Mittal<br />Web Developer</div></a>
+				        	<a href="https://www.facebook.com/kumarchitresh.sinha" target="_blank"><div class="webMember"><img src="./css/img/team/kc.jpg"><br />Kumar Chitresh<br />Design Head</div></a>
+				        	<a href="https://www.facebook.com/abhinav.goyal.5" target="_blank"><div class="webMember"><img src="./css/img/team/ag.jpg"><br />Abhinav Goyal<br />Graphic Designer</div></a>
+				        	<a href="https://www.facebook.com/rajan.harkare" target="_blank"><div class="webMember"><img src="./css/img/team/rh.jpg"><br />Rajan Harkare<br />Music Director</div></a>
+				        	<a href="https://www.facebook.com/akash.tyagi.94617" target="_blank"><div class="webMember"><img src="./css/img/team/at.jpg"><br />Akash Tyagi<br />Content Writer</div></a>
+				        	<a href="https://www.facebook.com/goofy.pranjal" target="_blank"><div class="webMember"><img src="./css/img/team/pd.jpg"><br />Pranjal Dubey<br />Content Writer</div></a>
+				        </p>
+				    </div>
+				</div>
+			<!--Web Team-->
+
+			<div id="teamHome"></div>
+			<div id="leftMember">
+
+				<div class="member" id="dubey"><img src="css/img/team/dubey.png" title="Convener (Admin)<br>Pranjal Dubey<br>+91-967-558-0610<br>pranjal@pravaah.org" /></div>
+
+				<div class="member" id="mudit"><img src="css/img/team/mudit.png" title="Co-Convener (Admin)<br>Mudit Gurnani<br>+91-839-286-7234<br>mudit@pravaah.org" /></div>
+
+				<div class="member" id="priya"><img src="css/img/team/priya.png" title="Co-Convener (Admin)<br>Priyadershita Singh<br>+91-999-730-6471<br>priya@pravaah.org" /></div>
+
+			</div>
+			<div id="centerMember">
+
+				<div class="member" id="nishant"><img src="css/img/team/nishant.png" title="Co-Convener (Events)<br>Nishant Sharma<br>+91-976-127-3933<br>events@pravaah.org" /></div>
+
+				<div class="member" id="rajat"><img src="css/img/team/rajat.png" title="Co-Convener (Events)<br>Rajat Agrawal<br>+91-975-971-0750<br>events@pravaah.org" /></div>
+
+				<div class="member" id="sunit"><img src="css/img/team/sunit.png" title="Co-Convener (Events)<br>Sunit Arora<br>+91-976-008-2433<br>events@pravaah.org" /></div>
+
+				<div class="member" id="tyagi"><img src="css/img/team/tyagi.png" title="Treasurer<br>Akash Tyagi<br>+91-789-515-9862<br>akash@pravaah.org" /></div>
+
+				<div class="member" id="abhas"><img src="css/img/team/abhas.png" title="IT Head<br>Abhas Mittal<br>+91-826-606-3709<br>abhas@pravaah.org" /></div>
+
+				<div class="member" id="chitresh"><img src="css/img/team/chitresh.png" title="Design Head<br>Kumar Chitresh (KC)<br>+91-945-130-0869<br>chitresh@pravaah.org" /></div>
+
+				<div class="member" id="rahul"><img src="css/img/team/rahul.png" title="Marketing Head<br>Rahul Upadhyay<br>+91-879-120-2766<br>rahul@pravaah.org" /></div>
+
+				<div class="member" id="tanya"><img src="css/img/team/tanya.png" title="Manager (Sponsorship)<br>Tanya Singhal<br>+91-941-048-9524<br>tanya@pravaah.org" /></div>
+
+				<div class="member" id="priyanshu"><img src="css/img/team/priyanshu.png" title="Co-Convener (Finance)<br>Priyanshu Garg<br>+91-805-780-7534<br>priyanshu@pravaah.org" /></div>
+
+			</div>
+			<div id="rightMember">
+
+				<div class="member" id="samveg"><img src="css/img/team/samveg.png" title="Convener (Finance)<br>Samveg Sinha<br>+91-967-540-9022<br>samveg@pravaah.org" /></div>
+
+				<div class="member" id="parth"><img src="css/img/team/parth.png" title="Co-Convener (Finance)<br>Parth Gupta<br>+91-895-834-0896<br>parth@pravaah.org" /></div>
+
+				<div class="member" id="kartik"><img src="css/img/team/kartik.png" title="Co-Convener (Sponsorship)<br>Kartikey Sharma<br>+91-812-659-9105<br>kartikey@pravaah.org" /></div>
+
+			</div>
+		</div>
+		<!--Team page ends here-->
+
+		<!--Landing page starts here-->
+		<div id="home">
+			<div id="iitr"><a href="http://www.iitr.ac.in" target="_blank"><img src="./css/img/iitr.png" width="100%"></a></div>
+				<div id="sound" title="Mute/Un-Mute"></div>
+				<div id="registration"><a href="schedule.html" target="_blank">Schedule</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/register" target="_blank">Register/Login</a></div>
+			<!--Navigation clouds starts here-->
+			<div id="navBar">
+				<a href="#aboutus" class="list-group-item sign"><div class="contact"><div id='contact' ></div></div></a>
+				<div class="team downArrow"><div id='team' ></div></div>
+				<div class="partners upperArrow"><div id='partners' ></div></div>
+				<div class="events bring-right"><div id='events' ></div></div>
+				<div class="gallery bring-left"><div id='gallery' ></div></div>
+			</div>
+			<!--Navigation clouds ends here-->
+
+			<a href="gingerfeet.html" target="_blank"><div id="gingerfeet"></div></a>
+			<a href="reach_us.html" target="_blank"><div id="reachus"></div></a>
+			<div id="social">
+				<div class="fb-like" data-href="https://www.facebook.com/RhapsodyIITR" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false" style="display:inline-flex;"></div>
+				&nbsp;&nbsp;<div class="fb-share-button" data-href="http://rhapsody.pravaah.org" data-type="button" style="display:inline-flex;"></div>
+		    </div>
+
+		    <!--About Us-->
+				<div id="aboutus" style="display: none;" class="fancy-content">
+				    <div class="fancy-header">
+				        <button type="button" class="close" onclick="$.fn.custombox('close');">&times;</button>
+				        <h4>About Rhapsody'14</h4>
+				    </div>
+				    <div class="fancy-body">
+				        <p>Rhapsody is the Annual Spring Cultural Festival of IIT Roorkee. Started in 2008 as <b><i>Rave</i></b> and 2010 as <b><i>TaRanG</i></b>, Rhapsody boasts about the glorious past of its ancestors.</p>
+				        <p><br />Rhapsody strives to bring about a change in the society.<br />
+				        Rhapsody is the ultimate platform to fulfill your dreams.<br />
+				        Rhapsody is a team with pedigree and passion.<br />Rhapsody is an experience.<br /><br /></p>
+
+						<p>After the glorious success in past years as TaRanG, one of the most awaited festival of IIT Roorkee is back again. Get ready to witness rivalry, companionship and enjoyment in a whole new dimension and be prepared to behold an ultra colossal Rhapsody'14..<br />
+						<b>Rhapsody'14</b> has something for everyone.. from the most hardcore nerd, to the dudes and dudettes.<br />
+						So come one come all, experience Fungeneering at <b>Rhapsody'14 - <i>"Feel the Beat"</i></b>.</p>
+				        	<div class="coordinatorDetails twoDiv">
+				        		<div class="coordi"><br /></div><br />
+					        	<div class="leftDiv"><span class="coordinator">Pranjal Dubey</span><br /><span class="cocontact">Convener (Admin)</span><br /><span class="cocontact">+91-96755-80610</span></div>
+					        	<div class="rightDiv"><span class="coordinator">Samveg Sinha</span><br /><span class="cocontact">Convener (Finance)</span><br /><span class="cocontact">+91-96754-09022</span></div>
+					        </div>
+				        </p>
+				    </div>
+				</div>
+		</div>
+		<!--Landing Page ends here-->
+
+		<!--Left page starts here-->
+		<div id="page-left">
+			<div class="rightArrow"></div>
+
+			<!-- Start WOWSlider.com BODY section -->
+			<div id="wowslider-container1">
+				<div class="ws_images"><ul>
+					<li><img src="css/gallery/1.jpg" id="wows1_0"/></li>
+					<li><img src="css/gallery/2.jpg" id="wows1_1"/></li>
+					<li><img src="css/gallery/3.jpg" id="wows1_2"/></li>
+					<li><img src="css/gallery/4.jpg" id="wows1_3"/></li>
+					<li><img src="css/gallery/5.jpg" id="wows1_4"/></li>
+					<li><img src="css/gallery/6.jpg" id="wows1_5"/></li>
+					<li><img src="css/gallery/7.jpg" id="wows1_6"/></li>
+					<li><img src="css/gallery/8.jpg" id="wows1_7"/></li>
+				</ul></div>
+				<div class="ws_shadow"></div>
+			</div>
+			<!-- End WOWSlider.com BODY section -->
+		</div>
+		<!--Left page ends here-->
+
+		<!--Right page starts here-->
+		<div id="page-right">
+			<span class="leftArrow"></span>
+			<div style="position:absolute; top: 10px; right: 10px; font-family: 'Audiowide', cursive; "><a href="https://www.facebook.com/profile.php?id=665206766885616" target="_blank" style="font-size: 20px; color: #dadada; text-decoration: none;">Gingerfeet LIVE</a></div>
+			<div class="gruCar"><div id="gruCar"></div></div>
+
+			<!--Event list starts here-->
+			<div id="eventList">
+				<a href="#workshop" class="list-group-item sign"><div class="oneEvent workshop" title="Workshops" ></div></a>
+			    <a href="#symphony" class="list-group-item sign"><div class="oneEvent symphony" title="Symphony - The Battle of Bands" ></div></a>
+			    <a href="#fundulgence" class="list-group-item sign"><div class="oneEvent fundulgence" title="Fundelgence - Informals | Online Events" ></div></a>
+			    <a href="#sargam" class="list-group-item sign"><div class="oneEvent sargam" title="Sargam - Solo Singing Event" ></div></a>
+			    <a href="#extasia" class="list-group-item sign"><div class="oneEvent extasia" title="Extasia - Group Dancing Event" ></div></a>
+			    <a href="#glitz" class="list-group-item sign"><div class="oneEvent glitz" title="Glitz - The Fashion Parade" ></div></a>
+			    <a href="#curtainCall" class="list-group-item sign"><div class="oneEvent curtainCall" title="Curtain Call - Stage and Street Plays" ></div></a>
+			    <a href="#verbosity" class="list-group-item sign"><div class="oneEvent verbosity" title="Verbosity - Literary Event" ></div></a>
+			    <a href="#prayaas" class="list-group-item sign"><div class="oneEvent prayaas" title="Prayaas - A Social Endeavor" ></div></a>
+			    <a href="#thahake" class="list-group-item sign"><div class="oneEvent thahake" title="Thahake - Kavi Sammelan" ></div></a>
+			    <a href="#alantus" class="list-group-item sign"><div class="oneEvent alantus" title="@tlantus - The LAN Gaming" ></div></a>
+			    <a href="#snapshots" class="list-group-item sign"><div class="oneEvent snapshots" title="Snapshots - Photography Contest" ></div></a>
+			    <a href="#beats" class="list-group-item sign"><div class="oneEvent beats" title="Beats - Solo and Duet Dancing Event" ></div></a>
+			</div>
+			<!--Event list ends here-->
+
+			<img src="css/img/grass.png" id="grass">
+
+			<!--Event details starts here-->
+			<div>
+				<!--Workshops-->
+				<div id="workshop" style="display: none;" class="fancy-content">
+				    <div class="fancy-header">
+				        <button type="button" class="close" onclick="$.fn.custombox('close');">&times;</button>
+				        <h4>Android Development cum Entrepreneurship</h4>
+				    </div>
+				    <div class="fancy-body">
+				        
+						<p>This workshop along with providing a basic foundation for developing your own cool applications in the latest Android operating systems will also be providing insight into entrepreneurial skills. All the participants will receive a certificate of acknowledgement by Pravaah, IIT Roorkee.</p>
+						<p>Fee: Rs. 400/-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Duration: 12 hours (4 hrs/day)</p>
+				        	<div class="coordinatorDetails twoDiv">
+					        	<div class="leftDiv"><span class="coordinator">Utkarsh</span><span class="cocontact"> (+91-97561-36308)</span></div>
+					        </div>
+				        </p>
+				    </div>
+				    <div class="fancy-header">
+				        <h4>Hacked-Off</h4>
+				    </div>
+				    <div class="fancy-body">
+
+						<p><b>Workshop Name:</b> Hacked Offf!!!! (An Ethical Hacking & Cyber Forensic Workshop)<br /><b>Workshop Duration:</b> 2 Days (16 Hours 10AM-6PM)<br /><b>Workshop Fee:</b> Rs. 1200/- (per student)<br /><b>Fee Included:</b> Workshop training fee, Study Material, Cyber Forensics ToolKit, Rhapsody 2014(IIT Roorkee, Saharanpur Campus) registration fee.<br /><b>Benefits to students:</b> Certification from (Rhapsody 2014), Scholarship, Awards, Cash Prize upto 50K..</p>
+				        	<div class="coordinatorDetails twoDiv">
+					        	<div class="leftDiv"><span class="coordinator">Nishant</span><span class="cocontact"> (+91-97612-73933)</span></div>
+					        </div>
+				        </p>
+				    </div>
+				</div>
+
+				<!--Thahake-->
+				<div id="thahake" style="display: none;" class="fancy-content">
+				    <div class="fancy-header">
+				        <button type="button" class="close" onclick="$.fn.custombox('close');">&times;</button>
+				        <h4>Thahake</h4>
+				    </div>
+				    <div class="fancy-body">
+				        <p>The essence of contemporary Indian Poetry coupled with the blend of wit and sarcasm provided by a stand up performance does make for a stimulating experience. Be prepared for fits of laughter as renowned hindi poets and stand up comedians assend center stage and enthrill everyone with their command of the language as well as dosses of hilarity under Thahake, the <i>Hasya Kavi Sammelan</i> under Rhapsody. Chuckles at peculiar habits of our celebrities, potshots at the flailing conditions of our political systems and light hearted observations on student liffe, all this coupled with deep symbolism and intricately composed rhyming verses. Apart from being an entertaining spectacle, this event also aims to revive and promote contemporary Indian Poetry.
+				        	<div class="coordinatorDetails twoDiv">
+				        		<div class="coordi">Co-ordinators</div><br />
+					        	<div class="leftDiv"><span class="coordinator">Himanshu</span><br /><span class="cocontact">+91-88591-87949</span></div>
+					        	<div class="rightDiv"><span class="coordinator">Rajesh</span><br /><span class="cocontact">+91-87557-70876</span></div>
+					        </div>
+				        </p>
+				    </div>
+				</div>
+
+				<!--Symphony-->
+				<div id="symphony" style="display: none;" class="fancy-content">
+				    <div class="fancy-header">
+				        <button type="button" class="close" onclick="$.fn.custombox('close');">&times;</button>
+				        <h4>Symphony</h4>
+				        <a href="./assets/rules/symphony.pdf" target="_blank"><span class="rules">Rules</span></a>
+				    </div>
+				    <div class="fancy-body">
+				        <p>One of the most buzzed about event in Rhapsody, Symphony would test the mettle of bands throughout the country. One of the foremost battle of bands in the country, this event would splash intoxicating music on the croud sending it jitters with high adrenaline and frenzied head banging that takes you away from the reality. See the best of the best fighting against each other for the coveted accolade in the following categories:
+				        <ul>
+				        	<li>English</li>
+				        	<li>Hindi</li>
+				        </ul>
+					        <div class="coordinatorDetails">
+					        	<div class="coordi">Co-ordinators</div><br />
+					        	<div class="leftDiv"><span class="coordinator">Deepesh</span><br /><span class="cocontact">+91-95362-88280</span></div>
+					        	<div class="centreDiv"><span class="coordinator">Akshay</span><br /><span class="cocontact">+91-83928-91086</span></div>
+					        	<div class="rightDiv"><span class="coordinator">Abhishek</span><br /><span class="cocontact">+91-88591-87530</span></div>
+					        </div>
+				        </p>
+				    </div>
+				</div>
+
+				<!--Fundulgence-->
+				<div id="fundulgence" style="display: none;" class="fancy-content">
+				    <div class="fancy-header">
+				        <button type="button" class="close" onclick="$.fn.custombox('close');">&times;</button>
+				        <h4>Fundulgence</h4>
+				    </div>
+				    <div class="fancy-body">
+				        <p>The zest and zeal of any cultural event, informals are off stage events included exclusively to add a splash of fun and spirit of greater mass involvment. These would be used as fillers between stage events and would be based on the spot participation so as to ensure maximum participation. Including exciting events like Treasure Hunt, Personality Contest, Wall Painting, Street Dancing and Karaoke, Informals promised to be the biggest crowd pullers.
+				        	<div class="coordinatorDetails">
+					        	<div class="coordi">Co-ordinators</div><br />
+					        	<div class="leftDiv"><span class="coordinator">Nikhil</span><br /><span class="cocontact">+91-82669-09298</span></div>
+					        	<div class="centreDiv"><span class="coordinator">Vishnu</span><br /><span class="cocontact">+91-82669-42927</span></div>
+					        	<div class="rightDiv"><span class="coordinator">Ayush</span><br /><span class="cocontact">+91-88591-45037</span></div>
+					        </div>
+				        </p>
+				        <div class="fancy-header">
+				        	<h4>Online Events</h4>
+				    	</div>
+				        <p>With the increasing participation of the youth of social media platforms like facebook and twitter, online events provide an excellent chance to indulge in fun filled competitions and walk away with amazong prizes. With absorbing events like a Virtual Stock Market, Online Treasure and Blog-o-Mania on offer, you are bound to be glued to the screens of your laptop.
+					        <div class="coordinatorDetails twoDiv">
+					        	<div class="coordi">Co-ordinators</div><br />
+					        	<div class="leftDiv"><span class="coordinator">Navaneet</span><br /><span class="cocontact">+91-94114-47918</span></div>
+					        	<div class="rightDiv"><span class="coordinator">Mukund</span><br /><span class="cocontact">+91-89540-84173</span></div>
+					        </div>
+				        </p>
+				    </div>
+				</div>
+
+				<!--Sargam-->
+				<div id="sargam" style="display: none;" class="fancy-content">
+				    <div class="fancy-header">
+				        <button type="button" class="close" onclick="$.fn.custombox('close');">&times;</button>
+				        <h4>Sargam</h4>
+				        <a href="./assets/rules/sargam.pdf" target="_blank"><span class="rules">Rules</span></a>
+				    </div>
+				    <div class="fancy-body">
+				        <p>Behold, as the overwhelming appreciation from the audience surrounds you, Sargam, is for the artists who are ready to face crowd and create an atmosphere of tranquility. This is where soothing and mesmerizing music finds its aboard and brings the artiste out of your depths.
+				        <ul>
+				        	<li>East-West: Indian/Western Vocal</li>
+				        	<li>Pulse: Instrumental</li>
+				        	<li>Havoc: All language rap</li>
+				        </ul>
+				        	<div class="coordinatorDetails">
+					        	<div class="coordi">Co-ordinators</div><br />
+					        	<div class="leftDiv"><span class="coordinator">Ankush</span><br /><span class="cocontact">+91-82668-53880</span></div>
+					        	<div class="centreDiv"><span class="coordinator">Gaurav</span><br /><span class="cocontact">+91-83928-90201</span></div>
+					        	<div class="rightDiv"><span class="coordinator">Kapil</span><br /><span class="cocontact">+91-80069-97032</span></div>
+					        </div>
+				        </p>
+				    </div>
+				</div>
+
+				<!--Extasia-->
+				<div id="extasia" style="display: none;" class="fancy-content">
+				    <div class="fancy-header">
+				        <button type="button" class="close" onclick="$.fn.custombox('close');">&times;</button>
+				        <h4>Extasia</h4>
+				        <a href="./assets/rules/extasia.pdf" target="_blank"><span class="rules">Rules</span></a>
+				    </div>
+				    <div class="fancy-body">
+				        <p>Feel the waves running through the event as the zip and fervor induced by the foot tapping numbers and breathtaking performances add audacity to the electrifying atmosphere. Taking dancing to a whole new level, this event promises to be one of the biggest stages for group dance competitions in North India.
+				        	<div class="coordinatorDetails twoDiv">
+					        	<div class="coordi">Co-ordinators</div><br />
+					        	<div class="leftDiv"><span class="coordinator">Saharsh</span><br /><span class="cocontact">91-95209-99909</span></div>
+					        	<div class="rightDiv"><span class="coordinator">Marutesh</span><br /><span class="cocontact">+91-82669-15773</span></div>
+					        </div>
+				        </p>
+				    </div>
+				</div>
+
+				<!--Beats-->
+				<div id="beats" style="display: none;" class="fancy-content">
+				    <div class="fancy-header">
+				        <button type="button" class="close" onclick="$.fn.custombox('close');">&times;</button>
+				        <h4>Beats</h4>
+				        <a href="./assets/rules/beats.pdf" target="_blank"><span class="rules">Rules</span></a>
+				    </div>
+				    <div class="fancy-body">
+				        <p>The event most sought after because of the enthralling moves of <i>Locking</i>, <i>Liquid Popping</i>, <i>Comtemporary</i>, <i>Hip-Hop</i>, <i>Jazz</i>, <i>Salsa</i> and <i>Tutting</i> performed by dancers of all genre. The participants would unlock their pulsating and enthralling moves against each other under the following categories:
+				        <ul>
+				        	<li>Solo</li>
+				        	<li>Duet</li>
+				        </ul>
+				        	<div class="coordinatorDetails twoDiv">
+					        	<div class="coordi">Co-ordinators</div><br />
+					        	<div class="leftDiv"><span class="coordinator">Nehal</span><br /><span class="cocontact">+91-95682-70863</span></div>
+					        	<div class="rightDiv"><span class="coordinator">Mayank</span><br /><span class="cocontact">+91-78301-96346</span></div>
+					        </div>
+				        </p>
+				    </div>
+				</div>
+
+				<!--Glitz-->
+				<div id="glitz" style="display: none;" class="fancy-content">
+				    <div class="fancy-header">
+				        <button type="button" class="close" onclick="$.fn.custombox('close');">&times;</button>
+				        <h4>Glitz</h4>
+				        <a href="./assets/rules/glitz.pdf" target="_blank"><span class="rules">Rules</span></a>
+				    </div>
+				    <div class="fancy-body">
+				        <p>Be prepared to get dazzled by a crowd cheering out for the young guns showing off their panache, proving they have what it takes to be the one to capture the stage with their flamboyant moves and eye catching attires. This event is simply meant to set the stage on fire and create immense furor and craze among the crowd. This event, loaded with beauty and dripping charm along with models whose elegance and confidence knows no limits, will definitely mesmerize the audience.
+				        	<div class="coordinatorDetails fourDiv">
+					        	<div class="coordi">Co-ordinators</div><br />
+					        	<div class="leftDiv"><span class="coordinator">Wardah</span><br /><span class="cocontact">+91-97606-47070</span></div>
+					        	<div class="centreDiv"><span class="coordinator">Aviral</span><br /><span class="cocontact">+91-99176-84801</span></div>
+					        	<div class="centreDiv"><span class="coordinator">Divyanshu</span><br /><span class="cocontact">+91-88591-27087</span></div>
+					        	<div class="rightDiv"><span class="coordinator">Vineet</span><br /><span class="cocontact">+91-97937-91253</span></div>
+					        </div>
+					    </p>
+				    </div>
+				</div>
+
+				<!--Curtain Call-->
+				<div id="curtainCall" style="display: none;" class="fancy-content">
+				    <div class="fancy-header">
+				        <button type="button" class="close" onclick="$.fn.custombox('close');">&times;</button>
+				        <h4>Curtain Call</h4>
+				        <a href="./assets/rules/curtainCall.pdf" target="_blank"><span class="rules">Rules</span></a>
+				    </div>
+				    <div class="fancy-body">
+				        <p>Dramatics expresses completely new ideas from the minds, presses social concerns and interprets familiar situations in an alternate way which might belong to different time periods and culture. Under Curtain Call, Rhapsody would provide an outlet for thespians to display their acting skills under two events:
+				        <ul>
+				        	<li>Rangmanch (Stage Play)</li>
+				        	<li>Nukkad Natak (Street Play)</li>
+				        </ul>
+				        	<div class="coordinatorDetails">
+					        	<div class="coordi">Co-ordinators</div><br />
+					        	<div class="leftDiv"><span class="coordinator">Upneet</span><br /><span class="cocontact">+91-90441-70890</span></div>
+					        	<div class="centreDiv"><span class="coordinator">Anand</span><br /><span class="cocontact">+91-82668-16340</span></div>
+					        	<div class="rightDiv"><span class="coordinator">Shubham</span><br /><span class="cocontact">+91-87555-66863</span></div>
+					        </div>
+					    </p>
+				    </div>
+				</div>
+
+				<!--Verbosity-->
+				<div id="verbosity" style="display: none;" class="fancy-content">
+				    <div class="fancy-header">
+				        <button type="button" class="close" onclick="$.fn.custombox('close');">&times;</button>
+				        <h4>Verbosity</h4>
+				        <a href="./assets/rules/verbosity.pdf" target="_blank"><span class="rules">Rules</span></a>
+				    </div>
+				    <div class="fancy-body">
+				        <p>For the bards, the orators, the trivia hunters and the random ramblers, Verbosity, the Literary Festival of Rhapsody, would be the stage to demonstrate their skills. The amazing battery of events would range out in number of diverse areas such as quizzing, impromptu communication skills, parliamentary debating and jouncy word play. Involving participation from some of the best in the business, the competition is bound to be high. Crack your brains, impress with your intellect, play with the enamoured faces of the English Language and walk away with drooling prizes.
+				        <ul>
+				        	<li>This House Debates - Asian Style Parliamentary Debate</li>
+				        	<li>Omniscience - The Rhapsody General Quiz</li>
+				        	<li>The Rambler Stands Alone - JAM</li>
+				        </ul>
+				        	<div class="coordinatorDetails fourDiv">
+					        	<div class="coordi">Co-ordinators</div><br />
+					        	<div class="leftDiv"><span class="coordinator">Himanshu</span><br /><span class="cocontact">+91-88591-87949</span></div>
+					        	<div class="centreDiv"><span class="coordinator">Abhishek</span><br /><span class="cocontact">+91-73796-95255</span></div>
+					        	<div class="centreDiv"><span class="coordinator">Nihal</span><br /><span class="cocontact">+91-88594-81601</span></div>
+					        	<div class="rightDiv"><span class="coordinator">Ehtisham</span><br /><span class="cocontact">+91-84495-05664</span></div>
+					        </div>
+				        </p>
+				    </div>
+				</div>
+
+				<!--Prayaas-->
+				<div id="prayaas" style="display: none;" class="fancy-content">
+				    <div class="fancy-header">
+				        <button type="button" class="close" onclick="$.fn.custombox('close');">&times;</button>
+				        <h4>Prayaas</h4>
+				    </div>
+				    <div class="fancy-body">
+				        <p>The highlight of Rhapsody would be the essential focus attributed to social service through an unprecedented endeavour, Prayaas. Completely based on social upliftment of the needy, Prayaas has the sole aim of empowering the specially abled section of the society and to bridge the gap between the privileged and the underprivileged section of the society. Apart from adding a social dimension to an already technologically sound image of the institute., Prayaas would imbibe the essence of socio-corporate responsibility. Under it, Prayaas would comprise a myriad of events held in association with some of the most renowned NGO’s in the country, whose sole aims remain bettering of underprivileged lives. Prayaas would comprise the following events:
+				        <ul>
+				        	<li>Aasha</li>
+				        	<li>Kiran</li>
+				        	<li>Jeevan</li>
+				        	<li>Nirodh</li>
+				        	<li>HastKala</li>
+				        </ul>
+				        	<div class="coordinatorDetails">
+					        	<div class="coordi">Co-ordinators</div><br />
+					        	<div class="leftDiv"><span class="coordinator">Piyush</span><br /><span class="cocontact">+91-78300-89774</span></div>
+					        	<div class="centreDiv"><span class="coordinator">Aashish</span><br /><span class="cocontact">+91-97614-31694</span></div>
+					        	<div class="rightDiv"><span class="coordinator">Saurav</span><br /><span class="cocontact">+91-86501-55994</span></div>
+					        </div>
+				        </p>
+				    </div>
+				</div>
+
+				<!--@lantus-->
+				<div id="alantus" style="display: none;" class="fancy-content">
+				    <div class="fancy-header">
+				        <button type="button" class="close" onclick="$.fn.custombox('close');">&times;</button>
+				        <h4><span style="font-weight:normal;">@</span>lantus</h4>
+				        <a href="./assets/rules/atlantus.pdf" target="_blank"><span class="rules">Rules</span></a>
+				    </div>
+				    <div class="fancy-body">
+				        <p>From the clash of steel and bone to the ring of leather and Kevlar, LAN gaming runs in the blood of its players. @LANtus-the battleground of the gamers, brings them all together in this ultimate showdown. This event would see adroit gamers compete with each other in a number of video games like Counter Strike, FIFA, DOTA, NFS and Age of Empires. Smart with strategy, imperious with headshots, accurate with your through balls- time to grab the bragging rights, gamers.
+				        	<div class="coordinatorDetails">
+					        	<div class="coordi">Co-ordinators</div><br />
+					        	<div class="leftDiv"><span class="coordinator">Samarth</span><br /><span class="cocontact">+91-78306-16421</span></div>
+					        	<div class="centreDiv"><span class="coordinator">Abhinav</span><br /><span class="cocontact">+91-96502-27354</span></div>
+					        	<div class="rightDiv"><span class="coordinator">Ayush</span><br /><span class="cocontact">+91-78979-89082</span></div>
+					        </div>
+				        </p>
+				    </div>
+				</div>
+
+				<!--Snapshots-->
+				<div id="snapshots" style="display: none;" class="fancy-content">
+				    <div class="fancy-header">
+				        <button type="button" class="close" onclick="$.fn.custombox('close');">&times;</button>
+				        <h4>Snapshots</h4>
+				    </div>
+				    <div class="fancy-body">
+				        <p>A picture, they say is worth a thousand words. Its you and your camera at work as you compete in the exclusive photography event, Snapshots. Apart from an online event for the best click and an exhibition displaying some breathtaking snaps, there would be an on the spot photography competition. So catch hold of your DSLR's and show us what all you can convey with the deftness of the shutter and the lens. Not only this, for the cinematics buffs, a short movie making competition would add the icing to the cake.
+				        <ul>
+				        	<li>Framed - Online Photography Contest <a href="./assets/rules/framed.pdf" target="_blank"><span class="rule">Rules</span></a></li>
+				        	<li>On Spot Photography <a href="./assets/rules/onspot.pdf" target="_blank"><span class="rule">Rules</span></a></li>
+				        	<li>Reels - Short Movie Making Contest <a href="./assets/rules/reels.pdf" target="_blank"><span class="rule">Rules</span></a></li>
+				        </ul>
+				        	<div class="coordinatorDetails">
+					        	<div class="coordi">Co-ordinators</div><br />
+					        	<div class="leftDiv"><span class="coordinator">Nishant</span><br /><span class="cocontact">+91-81262-10232</span></div>
+					        	<div class="centreDiv"><span class="coordinator">Mohit</span><br /><span class="cocontact">+91-84770-44296</span></div>
+					        	<div class="rightDiv"><span class="coordinator">Apoorva</span><br /><span class="cocontact">+91-89540-02696</span></div>
+					        </div>
+				        </p>
+				    </div>
+				</div>
+			</div>
+			<!--Event details starts here-->
+
+		</div>
+		<!--Right page ends here-->
+
+	</div>
+	<script type="text/javascript" src="js/jquery.custombox.js"></script>
+	<script type="text/javascript" src="js/custombox.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+	<script type="text/javascript" src="js/mCustomScrollbar.js"></script>
+	<script type="text/javascript" src="js/wowslider.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script>
+  $(function() {
+    $( document ).tooltip({html: true, content: function() {
+        return $(this).attr('title');
+    }});
+  });
+  </script>
+</body>
+</html>

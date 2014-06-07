@@ -1,0 +1,90 @@
+body{
+	height:100%;
+	background:url('img/back.jpg') no-repeat;
+	background-size:100% 100%;
+	background-attachment:fixed;
+	overflow-x:hidden;
+	min-width:1024px;
+	min-height:660px;
+}
+
+#map{
+	position: fixed;
+	right: -6%;
+	bottom: -12%;
+	z-index:10;
+}
+	
+#thunder{
+	position: fixed;
+	float: right;
+	z-index: 99;
+	height:80%;
+	right: 15%;
+}
+	
+#pointer{
+	position:fixed;
+	right:10%;
+	bottom:17%;
+	z-index:15;
+	-webkit-animation:movePointer 2s infinite;
+	animation:movePointer 2s infinite;
+	animation-timing-function: ease-out;
+}
+	
+#flame{
+	position:fixed;
+	right:9%;
+	bottom:21%;
+	z-index:16;
+	
+}
+	
+@keyframes movePointer{
+	0% {bottom:27%;}
+	50% {bottom:30%;}
+	100% {bottom:27%;}
+}
+
+@-webkit-keyframes movePointer{
+	0% {bottom:27%;}
+	50% {bottom:30%;}
+	100% {bottom:27%;}
+}
+
+#writeup{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 35%;
+	padding: 5%;
+	color: #eee;
+}
+
+#logo{
+	position: fixed;
+	top: 10px;
+	right: 10px;
+}
+
+h1{
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #DA560C;
+	font-family: 'Audiowide', cursive;
+}
+
+p{
+	font-size: 14px;
+	font-family: 'ABeeZee', sans-serif;
+	color: rgb(135, 211, 218);
+}
+
+.name{
+	color: #DA560C;
+}
+
+.number, #head{
+	color: #eee;
+}
