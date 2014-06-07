@@ -1,0 +1,57 @@
+ #map{
+	position: absolute;
+	right: -80px;
+	bottom: -80px;
+	z-index:10;
+	}
+	
+#thunder{
+	float: right;
+margin-right: 190px;
+z-index: 99;
+height:80%;
+}
+	
+#pointer{
+	position:absolute;
+	right:130px;
+	bottom:195px;
+	z-index:15;
+	-webkit-animation:movePointer 2s infinite;
+	animation:movePointer 2s infinite;
+	animation-timing-function: ease-out;
+	}
+	
+#flame{
+	position:absolute;
+	right:130px;
+	bottom:145px;
+	z-index:16;
+	
+	}
+	
+#right_image{
+	bottom:0;
+	right:0;
+	position:absolute;
+	}
+
+
+	
+@keyframes movePointer
+{
+0%   {bottom:195px;}
+
+50% {bottom:210px;}
+
+100% {bottom:195px;}
+}
+
+@-webkit-keyframes movePointer
+{
+0%   {bottom:195px;}
+
+50% {bottom:210px;}
+
+100% {bottom:195px;}
+}

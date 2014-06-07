@@ -1,0 +1,334 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:12px;
+	line-height:21px;
+	color:#ff9100;
+	text-shadow:1px 1px 1px #FFFFFF;
+	background: url("groovepaper.png") repeat;
+	padding-bottom: 1px;
+}
+#countdown_container {
+	width: 820px;
+	margin: 0 auto;
+	display: block;
+	padding: 40px;
+	margin: 60px auto;
+	border-radius:6px;
+	background:#ffffff;
+	background:rgba(255,255,255,0.6);
+	border:1px solid #dddddd;
+	border:1px solid rgba(255,255,255,0.6);
+	box-shadow:0 2px 12px #DDDDDD;
+}
+#countdown_container h1 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:28px;
+	font-weight: normal;
+	font-style:italic;
+	text-align:center;
+	color:#ff9100;
+	line-height:36px;
+	margin:0 auto 42px auto;
+	text-align:center;
+}
+
+#countdown_timer,
+#countdown_timer ul,
+#circular_countdown {
+	position: relative;
+	width:100%;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+#countdown_clock {
+	width:100%;
+	position:relative;
+	z-index:1;
+	margin: 0;
+	padding:0;
+}
+#circular_countdown_days,
+#circular_countdown_hours,
+#circular_countdown_minutes,
+#circular_countdown_seconds {
+	position:relative;
+	z-index:1;
+	padding:0;
+	width: 160px;
+}
+#circular_countdown_days {
+	margin: 0 37px 0 30px;
+}
+#circular_countdown_hours {
+	margin: 0 37px 0 0;
+}
+#circular_countdown_minutes {
+	margin: 0 37px 0 0;
+}
+#circular_countdown_seconds {
+	margin: 0;
+}
+#countdown_timer {
+	z-index:2;
+	width: 800px;
+}
+	#countdown_timer li {
+		list-style: none;
+		padding: 18px 20px 8px 20px;
+		margin-top: 42px;
+		float: left;
+		width: 160px;
+		color:#ff9100;
+		font-size: 9px;
+		position: absolute;
+		text-align: center;
+		text-transform:uppercase;
+	}
+		#countdown_timer li.days {
+			left:0px;
+		}
+		#countdown_timer li.hours {
+			left:200px;
+		}
+		#countdown_timer li.minutes {
+			left:400px;
+		}
+		#countdown_timer li.seconds {
+			left:600px;
+		}
+		#countdown_timer li em {
+			display: block;
+			font-size:32px;
+			line-height:30px;
+			font-weight:bold;
+			font-style: normal;
+			padding:0;
+		}
+
+/*
+Markup to keep a decent layout under IE8 and below
+*/
+
+/* IE8 */
+
+@media \0screen {
+	#countdown_timer {
+		height: 130px;
+	}
+	#countdown_container h1 {
+		margin:0 auto;
+	}
+}
+
+/* IE7 and below */
+
+#countdown_timer {
+	*height: 130px;
+}
+#countdown_container h1 {
+	*margin:0 auto;
+}
+
+
+
+
+@media screen and (min-width: 985px) {
+	#countdown_container {
+		width: 820px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 984px) {
+
+	#countdown_container {
+		width: 600px;
+	}
+	#countdown_timer {
+		z-index:2;
+		width: 600px;
+	}
+	#countdown_container h1 {
+		font-size:24px;
+	}
+	#countdown_timer li.days,
+	#countdown_timer li.minutes {
+		margin-left: 80px;
+	}
+	#countdown_timer li.hours,
+	#countdown_timer li.seconds {
+		margin-left: 95px;
+	}
+		#countdown_timer li.days {
+			left:0;
+			top:-3px;
+		}
+		#countdown_timer li.hours {
+			left:217px;
+			top:-3px;
+		}
+		#countdown_timer li.minutes {
+			left:0;
+			top:180px;
+		}
+		#countdown_timer li.seconds {
+			left:217px;
+			top:180px;
+		}
+	#circular_countdown_days,
+	#circular_countdown_hours,
+	#circular_countdown_minutes,
+	#circular_countdown_seconds {
+		clear: left;
+		margin: 0 0 17px 100px;
+	}
+	#circular_countdown_hours,
+	#circular_countdown_seconds {
+		clear: left;
+		margin: 0 0 17px 70px;
+	}
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	#countdown_container {
+		width: 300px;
+	}
+	#countdown_timer {
+		z-index:2;
+		width: 300px;
+	}
+	#countdown_container h1 {
+		font-size:23px;
+	}
+	#countdown_timer li.days,
+	#countdown_timer li.hours,
+	#countdown_timer li.minutes,
+	#countdown_timer li.seconds {
+		left:auto;
+		margin-left: 50px;
+	}
+		#countdown_timer li.days {
+			top:0;
+		}
+		#countdown_timer li.hours {
+			top:180px;
+		}
+		#countdown_timer li.minutes {
+			top:370px;
+		}
+		#countdown_timer li.seconds {
+			top:560px;
+		}
+	#circular_countdown_days,
+	#circular_countdown_hours,
+	#circular_countdown_minutes,
+	#circular_countdown_seconds {
+		clear: left;
+		margin: 0 0 20px 70px;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 479px) {
+
+	#countdown_container {
+		width: 240px;
+		padding: 20px;
+	}
+	#countdown_timer {
+		width: 260px;
+	}
+	#countdown_container h1 {
+		font-size:18px;
+	}
+	#countdown_timer li.days,
+	#countdown_timer li.hours,
+	#countdown_timer li.minutes,
+	#countdown_timer li.seconds {
+		left:auto;
+		margin-left: 20px;
+	}
+		#countdown_timer li.days {
+			top:0;
+		}
+		#countdown_timer li.hours {
+			top:180px;
+		}
+		#countdown_timer li.minutes {
+			top:370px;
+		}
+		#countdown_timer li.seconds {
+			top:560px;
+		}
+	#circular_countdown_days,
+	#circular_countdown_hours,
+	#circular_countdown_minutes,
+	#circular_countdown_seconds {
+		clear: left;
+		margin: 0 0 20px 40px;
+	}
+
+}
+
+#visit{
+position:fixed;
+bottom:20px;
+right:20px;
+font-size:16px;
+color:#888;
+}
+#login{
+position:fixed;
+top:20px;
+right:20px;
+font-size:16px;
+}
+#visit a, #login a{
+text-decoration:none;
+color:#bbb;
+}
+#visit a:hover, #login a:hover{
+color:#888;
+}
+.fb_edge_widget_with_comment{
+position:fixed;
+bottom:20px;
+left:20px;
+}
+#fb,#twitter,#gplus,#linkedin{
+display:inline-block;
+width: 43px;
+height: 39px;
+background: url('icons.png');
+background-size: 180px 180px;
+}
+#fb{
+background-position:88px 0px;
+}
+#linkedin{
+background-position:44px 0px;
+}
+#gplus{
+background-position: 88px 85px;
+}
+#follow{
+display:inline-block;
+font-family: Georgia, "Times New Roman", Times, serif;
+vertical-align: top;
+margin-top: 10px;
+font-size:16px;
+}
+#logo{
+width: 150px;
+height: 150px;
+position: fixed;
+top: 10px;
+left: 10px;
+background: url("logo.png");
+background-size: 100px;
+background-repeat: no-repeat;
+}

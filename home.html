@@ -1,0 +1,54 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" href="layout.css" type="text/css" />
+<title>Pravaah : The Golden Jubilee Celebration</title>
+	<script>
+		(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=511859215568936";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+</head>
+
+<body>
+<div id="logo"></div>
+<div id="login"><a href="/webmail">Webmail Login</a></div>
+<div id="countdown_container">
+	<h1>Pravaah - The Golden Jubilee Celebration<br />of<br />IIT Roorkee Saharanpur Campus !<br />We will be live in..</h1>
+
+    <div id="countdown_timer"></div><!-- Countdown values -->
+    <div id="countdown_clock">
+        <canvas id="circular_countdown_days" width="160" height="160"></canvas>
+        <canvas id="circular_countdown_hours" width="160" height="160"></canvas>
+        <canvas id="circular_countdown_minutes" width="160" height="160"></canvas>
+        <canvas id="circular_countdown_seconds" width="160" height="160"></canvas>   
+    </div>
+</div>
+<div>
+	<div id="follow">Follow Us:</div>
+	<a href="http://www.facebook.com/pravaahIITRSre" target="_blank"><div id="fb"></div></a>
+	<a href="http://www.twitter.com/GoldenPravaah" target="_blank"><div id="twitter"></div></a>
+	<a href="http://www.linkedin.com/groups/Pravaah-5190469" target="_blank"><div id="linkedin"></div></a>
+	<a href="http://plus.google.com/113037694262790051675" target="_blank"><div id="gplus"></div></a>
+</div>
+<div class="fb-like" style="position:absolute;" data-href="https://www.facebook.com/pravaahIITRsre" data-width="450" data-layout="button_count" data-show-faces="false" data-send="true"></div>
+<div id="visit">Meanwhile visit our <a href="http://www.iitr.ac.in/pravaah/" target="_blank">beta site</a>.</div>
+<script src="jquery.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+var end = new Date('10/16/2013 12:15 PM');
+	var now = new Date;
+	var distance = end - now;
+	if (distance < 0) {
+	window.location.href = "index.html";
+	}
+})
+	</script>
+</body>
+</html>
